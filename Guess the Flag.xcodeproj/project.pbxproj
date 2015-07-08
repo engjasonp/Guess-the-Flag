@@ -13,6 +13,7 @@
 		CAC4BA941B4B5EA40038519C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC4BA931B4B5EA40038519C /* Images.xcassets */; };
 		CAC4BA971B4B5EA40038519C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4BA951B4B5EA40038519C /* LaunchScreen.xib */; };
 		CAC4BAA31B4B5EA40038519C /* Guess_the_FlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BAA21B4B5EA40038519C /* Guess_the_FlagTests.swift */; };
+		CAC4BAAD1B4D1AAE0038519C /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4BAAC1B4D1AAE0038519C /* Array+Shuffling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CAC4BA9C1B4B5EA40038519C /* Guess the FlagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess the FlagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC4BAA11B4B5EA40038519C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAC4BAA21B4B5EA40038519C /* Guess_the_FlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess_the_FlagTests.swift; sourceTree = "<group>"; };
+		CAC4BAAC1B4D1AAE0038519C /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				CAC4BA8C1B4B5EA40038519C /* AppDelegate.swift */,
 				CAC4BA8E1B4B5EA40038519C /* ViewController.swift */,
+				CAC4BAAC1B4D1AAE0038519C /* Array+Shuffling.swift */,
 				CAC4BA901B4B5EA40038519C /* Main.storyboard */,
 				CAC4BA931B4B5EA40038519C /* Images.xcassets */,
 				CAC4BA951B4B5EA40038519C /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				CAC4BA8F1B4B5EA40038519C /* ViewController.swift in Sources */,
 				CAC4BA8D1B4B5EA40038519C /* AppDelegate.swift in Sources */,
+				CAC4BAAD1B4D1AAE0038519C /* Array+Shuffling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
