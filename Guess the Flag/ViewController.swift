@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var scoreCount: UILabel!
+    @IBOutlet weak var result: UILabel!
     
     var countries = [String]()
     var score = 0
@@ -30,10 +32,10 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGrayColor().CGColor
         button3.layer.borderColor = UIColor.lightGrayColor().CGColor
         
-        askQuestion(nil)
+        askQuestion()
     }
 
-    func askQuestion(action: UIAlertAction!) {
+    func askQuestion() {
         
         countries.shuffle()
         correctAnswer = Int(arc4random_uniform(3))
@@ -47,15 +49,16 @@ class ViewController: UIViewController {
         var title: String
         
         if (sender.tag == correctAnswer) {
-            title = "Correct"
+            title = "Correct!"
             ++score
         } else {
-            title = "Wrong"
+            title = "Wrong!"
             --score
         }
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .Alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .Default, handler: askQuestion))
-        presentViewController(ac, animated: true, completion: nil)
+        result.hidden = false
+        result.text = title
+        askQuestion()
+        scoreCount.text = "Score: \(score)"
     }
     
     override func didReceiveMemoryWarning() {
